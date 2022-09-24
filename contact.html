@@ -4,79 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <link rel="shortcut icon" href="assets/img/Microphone.ico">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Contato</title>
 </head>
 <body>
-    <ul>
-        <li><a href="index.html" target="_blank">Home</a></li>
-        <li><a href="contact.html" target="_blank">Contact</a></li>
+    <nav class="header-menu">
+        <ul class="lista-menu">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="" >Contato</a></li>
+            <li><a href="referencias.html">Referências</a></li>
 
-    </ul> 
-
-    <h1>Entre em contato</h1>
+        </ul> 
+    </nav>
 
     <main>
-        <form>
-            <label for="nomecompleto">Nome completo</label> <!-- ao clicar no texto o sensor já habilita a entrada-->
-            <br>
-            <input type="text" id="nomecompleto" class="input-padrao" required>
 
-            <br><br>
+        <div class="box">
+            <div class="cont-header">
+                <h1>Informações para contato</h1>
+            </div>
+    
+            <form >
+                
+                <label for="nomecompleto">Nome completo</label> <!-- ao clicar no texto o sensor já habilita a entrada-->
+                <input type="text" id="nomecompleto" class="input-padrao" required placeholder="Digite seu nome completo">
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--Torna o preenchimento correto obrigatório-->
+    
+    
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!--sugestão de preenchimento-->
+    
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"required placeholder="Você consome conteúdos que te auxiliam a desenvolver o pilar de autoconhecimento? Me conte quais são suas principais referências!"></textarea> <!-- permite ao usuário colocar mais de uma linha de texto-->
+    
+                <fieldset class="contato"> <!-- refere-se à configuração de um campo em específico-->
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                    <!--"name" possibilita que ao marcar uma bolinha, a outra seja desmarcada automaticamente. A propriedade name só pode ser "preenchida" uma única vez.-->
+    
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                </fieldset>
+    
+                <fieldset class="contato">
+                    <legend>Qual horário prefere ser atendido?</legend> <!--própria para fieldset-->
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+    
+                    <label class="checkbox"><input type="checkbox" checked>Gostaria de receber recomendações de podcasts por email?</label>
+                    <!--deixar a opção marcada mais otimizada  para o usuário-->
+                    <input type="submit" value="Enviar" class="enviar">
+            </form>
+            
+        </div>
 
-            <label for="email">Email</label>
-            <br>
-            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--Torna o preenchimento correto obrigatório-->
-
-            <br><br>
-
-
-            <label for="telefone">Telefone</label>
-            <br>
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!--sugestão de preenchimento-->
-
-            <br><br>
-
-            <label for="mensagem">Mensagem</label>
-            <br>
-            <textarea cols="70" rows="10" id="mensagem" class="input-padrao"required ></textarea> <!-- permite ao usuário colocar mais de uma linha de texto-->
-
-            <br><br>
-
-            <fieldset> <!-- refere-se à configuração de um campo em específico-->
-                <legend>Como prefere o nosso contato?</legend>
-                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
-                <!--"name" possibilita que ao marcar uma bolinha, a outra seja desmarcada automaticamente. A propriedade name só pode ser "preenchida" uma única vez.-->
-
-                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
-
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
-            </fieldset>
-
-            <br><br>
-
-
-            <fieldset>
-                <legend>Qual horário prefere ser atendido?</legend> <!--própria para fieldset-->
-                <select>
-                    <option>Manhã</option>
-                    <option>Tarde</option>
-                    <option>Noite</option>
-                </select>
-            </fieldset>
-
-            <br>
-
-                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
-                <!--deixar a opção marcada mais otimizada  para o usuário-->
-                <input type="submit" value="Enviar formulário" class="enviar">
-        </form>
-
-        <form>
-            <h2>Endereço</h2>
-            <p>Praça do forró.</p>
-            <p>São Paulo - SP </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.1388078082177!2d-46.44803198502349!3d-23.491509284717655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce616495555555%3A0xa14f6679686ce618!2zUHJhw6dhIGRvIEZvcnLDsw!5e0!3m2!1spt-BR!2sbr!4v1663860327131!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </form>
+        
     </main>
+
+    <footer class="footer">
+        <p>Copyright © 2022 | Desenvolvido por Ana Beatriz dos Santos | Generation Brasil</p>
+    </footer>
+
 </body>
 </html>
