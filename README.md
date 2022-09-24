@@ -12,5 +12,5 @@ Em andamento
 
 Acrescentar:
 - header; <br>
--responsividade p/ dispositivos menores; <br>
--ajustar identificação;
+- responsividade p/ dispositivos menores; <br>
+- ajustar identificação;
