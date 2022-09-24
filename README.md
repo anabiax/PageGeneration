@@ -11,6 +11,6 @@ Já que "toda sexta-feira é dia de Afetos" decidi referenciar o podcast que tem
 Em andamento 
 
 Acrescentar:
-- header;
--responsividade p/ dispositivos menores;
+- header; <br>
+-responsividade p/ dispositivos menores; <br>
 -ajustar identificação;
