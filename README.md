@@ -8,8 +8,9 @@ Já que "toda sexta-feira é dia de Afetos" decidi referenciar o podcast que tem
 
 ####
 
-Concluído ✔️
+Em andamento 
 
-![giphy](https://user-images.githubusercontent.com/105956403/192096370-9ea62bb8-26b1-4c31-a7f5-0a61ab8bd875.gif) 
-<br>
-Gif da série Insecure, da HBO.
+Acrescentar:
+- header;
+-responsividade p/ dispositivos menores;
+-ajustar identificação;
