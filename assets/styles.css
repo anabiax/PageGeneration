@@ -48,7 +48,6 @@
     font-size: 20px;
     color: #fff;
     background: #D36B00;  
-    
 }
 
 .lista-menu {
@@ -57,7 +56,6 @@
     list-style: none;
     justify-content: space-between;
     background: #D36B00;  
-    
 }
 
 .secao {
@@ -78,23 +76,18 @@ article img {
     width: 450px;
     padding: 10px;
     margin-left: 15%;
-
     margin: 20px 0px 20px 0px
-    
 }
 
-article p {
+article p, h3 {
     justify-content: center;
     display: flex;
     padding-bottom: 30px;
-
 }
 
 .video {
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    
+    padding: 60px 0 10px 0;
 }
 
 h1, h2 {
@@ -138,6 +131,33 @@ section article {
 .footer p {
     background: #D36B00;  
 }
+
+.dev {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.identificacao-dev {
+    width: 90%;
+    max-width: 440px;
+    color: #000;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10%;
+    margin: 70px 0 80px 0;
+
+}
+
+.identificacao-dev img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 50px;
+} 
 
 /*  CONTATOS */
 
@@ -192,7 +212,6 @@ form label, form legend {    /*O foco deve estar no formulário que será preenc
 .contato {
     border: none;
     padding-bottom: 32px;
-    
 }
 
 .enviar{
@@ -211,8 +230,6 @@ form label, form legend {    /*O foco deve estar no formulário que será preenc
 
 .enviar:hover{
     background-color: darkorange; /* mouse por cima do elemento fica mais escurinho */
-    /* transform: scale(1.2); aumenta um item proporcionalmente */
-
 }
 
 table{
@@ -231,10 +248,8 @@ td, th {
     padding: 8px 15px;
 }
 
-
 /* REFERÊNCIAS */
 
 .referencias{
     margin: 0px 0 152px 50px;
 }
-
