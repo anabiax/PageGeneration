@@ -43,11 +43,20 @@
     background: #D36B00;  
 }
 
-.lista-menu li a {
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 1rem;
+    font-size: 24px;
+}
+
+a {
     text-decoration: none;
-    font-size: 20px;
-    color: #fff;
     background: #D36B00;  
+    color: #fff;
 }
 
 .lista-menu {
@@ -87,7 +96,7 @@ article p, h3 {
 
 .video {
     text-align: center;
-    padding: 60px 0 10px 0;
+    padding: 60px 0 100px 0;
 }
 
 h1, h2 {
@@ -139,7 +148,9 @@ section article {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
 
 .identificacao-dev {
     width: 90%;
@@ -160,10 +171,6 @@ section article {
 } 
 
 /*  CONTATOS */
-
-.box {
-
-}
 
 form, h1 {
     margin: 50px;
