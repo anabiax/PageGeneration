@@ -19,54 +19,51 @@
     </nav>
 
     <main>
-
-        <div class="box">
             <div class="cont-header">
                 <h1>Informações para contato</h1>
             </div>
-    
-            <form >
-                
-                <label for="nomecompleto">Nome completo</label> <!-- ao clicar no texto o sensor já habilita a entrada-->
-                <input type="text" id="nomecompleto" class="input-padrao" required placeholder="Digite seu nome completo">
-    
-                <label for="email">Email</label>
-                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--Torna o preenchimento correto obrigatório-->
-    
-    
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!--sugestão de preenchimento-->
-    
-                <label for="mensagem">Mensagem</label>
-                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"required placeholder="Você consome conteúdos que te auxiliam a desenvolver o pilar de autoconhecimento? Me conte quais são suas principais referências!"></textarea> <!-- permite ao usuário colocar mais de uma linha de texto-->
-    
-                <fieldset class="contato"> <!-- refere-se à configuração de um campo em específico-->
-                    <legend>Como prefere o nosso contato?</legend>
-                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
-                    <!--"name" possibilita que ao marcar uma bolinha, a outra seja desmarcada automaticamente. A propriedade name só pode ser "preenchida" uma única vez.-->
-    
-                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
-    
-                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
-                </fieldset>
-    
-                <fieldset class="contato">
-                    <legend>Qual horário prefere ser atendido?</legend> <!--própria para fieldset-->
-                    <select>
-                        <option>Manhã</option>
-                        <option>Tarde</option>
-                        <option>Noite</option>
-                    </select>
-                </fieldset>
-    
-                    <label class="checkbox"><input type="checkbox" checked>Gostaria de receber recomendações de podcasts por email?</label>
-                    <!--deixar a opção marcada mais otimizada  para o usuário-->
-                    <input type="submit" value="Enviar" class="enviar" onclick="enviar()">
-            </form>
             
-        </div>
+            <div class="container" >
+                <form >
+                    
+                    <input type="text" id="nomecompleto" class="input-padrao" required placeholder="Digite seu nome completo">
+                    <label for="nomecompleto">Nome completo</label> <!-- ao clicar no texto o sensor já habilita a entrada-->
+                    
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--Torna o preenchimento correto obrigatório-->
+                    <label for="email">Email</label>
 
+
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!--sugestão de preenchimento-->
+                    <label for="telefone">Telefone</label>
+
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao"required placeholder="Você consome conteúdos que te auxiliam a desenvolver o pilar de autoconhecimento? Me conte quais são suas principais referências!"></textarea> <!-- permite ao usuário colocar mais de uma linha de texto-->
+                    <label for="mensagem">Mensagem</label>
+
+
+                    <fieldset class="contato"> <!-- refere-se à configuração de um campo em específico-->
+                        <legend>Como prefere o nosso contato?</legend>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                        <!--"name" possibilita que ao marcar uma bolinha, a outra seja desmarcada automaticamente. A propriedade name só pode ser "preenchida" uma única vez.-->
         
+                        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+        
+                        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                    </fieldset>
+        
+                    <fieldset class="contato">
+                        <legend>Qual horário prefere ser atendido?</legend> <!--própria para fieldset-->
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+        
+                        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber recomendações de podcasts por email?</label>
+                        <!--deixar a opção marcada mais otimizada  para o usuário-->
+                        <input type="submit" value="Enviar" class="enviar" onclick="enviar()">
+                </form>
+            </div>
     </main>
 
     <footer class="footer">
