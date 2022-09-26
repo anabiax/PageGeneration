@@ -170,7 +170,7 @@ section article {
     margin: 50px;
 } 
 
-/*  CONTATOS */
+/*  CONTATO */
 
 form, h1 {
     margin: 50px;
@@ -190,27 +190,53 @@ form, h1 {
 form label, form legend {    /*O foco deve estar no formulário que será preenchido */
     display: block;
     font-size: 15px;
-    margin: 0 0 10px;
+    margin: 0 0 10px ; /* top, right e bottom */
+    
 }
 
 .input-padrao {      /* TAG de conteúdo  // replicar  a mesma configuração a outro elemento por meio do uso de uma vírgula*/
-    display: block;
-    margin: 0 0 20px;
+    display: inline-block; /* nada mais ocupa essa linha além dele */
+    margin: 0 0 20px ;
     padding: 10px 25px; /* alterar o espaçamento interno entre o conteúdo e a borda.*/
-    width: 50%;
-    border-radius: 10px;
-    background-color: #fff;
-    border: none;
+    width: 80%; /* tamanho do traço laranja */
+    border-radius: 3px; /* o arredondamento é ínfimo com 3px, mas tá ok*/
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #D36B00;
+    outline: none;  /* tirar aquela marcação de caixinha do input */
+    min-width: 180px;
 }
-
+/* 
 .input-padrao input::hover {
     background-color: #7D6E83;
+} */
+
+.input-padrao {
+    position: relative;
+    padding-top: 13px;    
 }
 
-.input-padrao input:focus-visible {
-    outline: 1px solid #D36B00;
+.input-padrao input:focus {
+    border-bottom: 2px solid red;
 }
 
+.input-padrao label {
+    color: #D36B00;
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.input-padrao input:focus + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #000;
+}
+
+/* caixinha de recomendações */
 .checkbox input {
     margin: 20px 0;
     margin-right: 0.35rem;
@@ -222,8 +248,8 @@ form label, form legend {    /*O foco deve estar no formulário que será preenc
 }
 
 .enviar{
-    width: 50%;
-    padding: 12px 32px ;
+    width: 80.4%;
+    padding: 15px 32px;
     background-color: orange;
     color: white;
     font-weight: bold;
