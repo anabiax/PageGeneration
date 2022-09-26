@@ -10,10 +10,13 @@ por seletor: querySelector()
 
 */ 
 
+// variáveis de formulário
 let nome = window.document.getElementById("nomecompleto") // acessando o DOM 
 let email = document.querySelector("#email") // pelo ID
 let telefone = document.querySelector("#telefone") // pelo ID
 let mensagem = document.querySelector("#mensagem")
+
+// variáveis de controle de preenchimento
 let nomeOk = false
 let emailOk = false
 let telefoneOk = false
@@ -22,9 +25,11 @@ let mensagemOk = false
 
 function validarNome() {
     let txtNome = document.querySelector("#txtNome")  // só serve p/ o escopo desta função
-    if(nomecompleto.value.length < 3 ){
-        txtNome.innerHTML = "Nome inválido."
+    
+    if(nomecompleto.value.length < 3 ) {
+        txtNome.innerHTML = "Nome inválido. Digite ao menos 3 (três) caracteres."
         txtNome.style.color = "#C21010"
+        nomeOk = false
     } else {
         txtNome.innerHTML = "Nome válido."
         txtNome.style.color = "#357C3C"
@@ -34,10 +39,11 @@ function validarNome() {
 
 function validarEmail() {
     let txtEmail = document.querySelector("#txtEmail")
+    
     if(email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1) {
         txtEmail.innerHTML = "Email inválido."
         txtEmail.style.color = "#C21010"
-        emailOk=false
+        emailOk = false
     } else {
         txtEmail.innerHTML = "Email válido."
         txtEmail.style.color = "#357C3C"
@@ -45,18 +51,19 @@ function validarEmail() {
     }
 }
 
-// validar na sequência padrão de um email
+// validar o padrão de um email na sequência 
 function validarEmail2() {
-    let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ 
-    let txtEmail = document.querySelector("txtEmail")
+    let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    let txtEmail = document.querySelector("#txtEmail")
 
     if(email.value.match(regex)){
-        txtEmail.innerHTML = "Email válido."
-        txtEmail.style.color = "#C21010"
-    } else {
-        txtEmail.innerHTML = "Email válido."
-        txtEmail.style.color = "#357C3C"
+        txtEmail.innerHTML = 'Email válido.'
+        txtEmail.style.color = '#4A314D'
         emailOk = true
+    } else {
+        txtEmail.innerHTML = 'Email inválido.'
+        txtEmail.style.color = '#C21010'
+        emailOk = false
     }
 }
 
@@ -64,10 +71,10 @@ function validarTelefone() {
     let txtTelefone = document.querySelector("#txtTelefone")
     if (telefone.value.length <= 9 && telefone.value.length > 9) {
         txtTelefone.innerHTML = "Telefone inválido."
-        txtTelefone.style.color = "red"
+        txtTelefone.style.color = "#C21010"
     } else {
         txtTelefone.innerHTML = "Telefone válido."
-        txtTelefone.style.color = "green"
+        txtTelefone.style.color = "#4A314D"
         telefoneOk = true
     }
 }
@@ -87,8 +94,8 @@ function validarMensagem() {
 }
 
 function enviar() {
-    if (nomeOk == true && emailOk == true && mensagemOk == true ){
-        alert('Sua mensagem foi enviada com sucesso e em breve será respondida :) Fique atento aos seus canais de comunicação.')
+    if (nomeOk === true && emailOk === true && mensagemOk === true ) {
+        alert(nome.value + ', sua mensagem foi enviada com sucesso e em breve será respondida :) Fique atento aos seus canais de comunicação.')
     } else {
         alert('Preencha o formulário corretamente antes de enviar.')
     }
