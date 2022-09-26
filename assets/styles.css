@@ -43,6 +43,11 @@
     background: #D36B00;  
 }
 
+/* quando o mouse passa por cima do header muda de cor */
+.header-menu li a:hover{
+    color: #FDEEDC;
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -141,34 +146,10 @@ section article {
     background: #D36B00;  
 }
 
-.dev {
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.tm-social {
+    width: 50px;
+    height: 50px;
 }
-
-
-.identificacao-dev {
-    width: 90%;
-    max-width: 440px;
-    color: #000;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 10%;
-    margin: 70px 0 80px 0;
-
-}
-
-.identificacao-dev img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 50px;
-} 
 
 /*  CONTATO */
 
@@ -230,7 +211,6 @@ section article {
     border: none;
     margin-top: 25px; /* espacinho entre o "mensagem" e "como prefere nosso contato?" */
     padding-bottom: 32px;
-    justify-content: column;
 }
 
 .enviar{
@@ -244,7 +224,7 @@ section article {
     border-radius: 5px;
     transition: 1s all; /* transformar de uma cor a outra de forma suave TODOS OS ELEMENTOS */
     cursor: pointer; /* mãozinha sobre o elemento */
-    margin: 50px 0 50px 160px;
+    margin: 50px 0 50px 150px;
 }
 
 .enviar:hover{
@@ -270,5 +250,9 @@ td, th {
 /* REFERÊNCIAS */
 
 .referencias{
-    margin: 0px 0 152px 50px;
+    margin: 0px 0 188px 50px;
 }
+
+/* .referencias a{
+    text-decoration: none;
+} */
