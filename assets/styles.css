@@ -216,10 +216,11 @@ section article {
     display: flex;
     flex-direction: column;  /* deixar um embaixo do outro*/
     flex-wrap: wrap;
+    margin-bottom: 35px;
 }
 
 .enviar{
-    width: 80.4%;
+    width: 100%;
     padding: 15px 32px;
     background-color: orange;
     color: white;
@@ -229,7 +230,7 @@ section article {
     border-radius: 5px;
     transition: 1s all; /* transformar de uma cor a outra de forma suave TODOS OS ELEMENTOS */
     cursor: pointer; /* mãozinha sobre o elemento */
-    margin: 50px 0 50px 150px;
+    margin: 50px 0 50px 0;
 }
 
 .enviar:hover{

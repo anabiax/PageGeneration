@@ -58,7 +58,7 @@ function validarEmail2() {
 
     if(email.value.match(regex)){
         txtEmail.innerHTML = 'Email válido.'
-        txtEmail.style.color = '#4A314D'
+        txtEmail.style.color = '#357C3C'
         emailOk = true
     } else {
         txtEmail.innerHTML = 'Email inválido.'
@@ -74,7 +74,7 @@ function validarTelefone() {
         txtTelefone.style.color = "#C21010"
     } else {
         txtTelefone.innerHTML = "Telefone válido."
-        txtTelefone.style.color = "#4A314D"
+        txtTelefone.style.color = "#357C3C"
         telefoneOk = true
     }
 }
