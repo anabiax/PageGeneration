@@ -25,19 +25,23 @@
             
             <div class="container" >
                 <form >
-                    
-                    <input type="text" id="nomecompleto" class="input-padrao" required placeholder="Digite seu nome completo">
                     <label for="nomecompleto">Nome completo</label> <!-- ao clicar no texto o sensor já habilita a entrada-->
-                    
-                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--Torna o preenchimento correto obrigatório-->
+                    <input type="text" id="nomecompleto" onkeyup="validarNome()" class="input-padrao" required placeholder="Digite seu nome completo">
+                    <div id="txtNome"></div>  <!--  fazer validação com o JS -->
+
                     <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" onkeyup="validarEmail()" required placeholder="seuemail@dominio.com"> <!--Torna o preenchimento correto obrigatório-->
+                    <div id="txtEmail"></div>  <!--  fazer validação com o JS -->
 
 
-                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!--sugestão de preenchimento-->
-                    <label for="telefone">Telefone</label>
+                    <label for="telefone">Telefone celular</label>
+                    <input type="tel" id="telefone" class="input-padrao" onkeyup="validarTelefone()" required placeholder="(XX) XXXXX-XXXX"> <!--sugestão de preenchimento-->
+                    <div id="txtTelefone"></div>  <!--  fazer validação com o JS -->
 
-                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao"required placeholder="Você consome conteúdos que te auxiliam a desenvolver o pilar de autoconhecimento? Me conte quais são suas principais referências!"></textarea> <!-- permite ao usuário colocar mais de uma linha de texto-->
+
                     <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" onkeyup="validarMensagem()" required placeholder="Você consome conteúdos que te auxiliam a desenvolver o pilar de autoconhecimento? Me conte quais são suas principais referências!"></textarea> <!-- permite ao usuário colocar mais de uma linha de texto-->
+                    <div id="txtMensagem"></div>  <!--  fazer validação com o JS -->
 
 
                     <fieldset class="contato"> <!-- refere-se à configuração de um campo em específico-->

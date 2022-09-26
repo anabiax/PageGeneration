@@ -50,10 +50,11 @@
 
 ul {
     list-style: none;
-    display: flex;
+    text-decoration: none;
 }
 
 li {
+    display: inline;
     margin-right: 1rem;
     font-size: 24px;
 }
@@ -186,7 +187,7 @@ section article {
 
 .input-padrao {   
     display: inline-block; /* nada mais ocupa essa linha além dele */
-    margin: 25px 0 10px ; /* top, right e bottom*/
+    margin: 20px 0 10px ; /* top, right e bottom*/
     padding: 10px; /* alterar o espaçamento interno entre o conteúdo e a borda. */
     background-color: transparent;
     border: 0;
@@ -210,7 +211,11 @@ section article {
 .contato {
     border: none;
     margin-top: 25px; /* espacinho entre o "mensagem" e "como prefere nosso contato?" */
-    padding-bottom: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;  /* deixar um embaixo do outro*/
+    flex-wrap: wrap;
 }
 
 .enviar{
